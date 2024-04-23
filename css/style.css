@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  font-family: roboto;
+}
+
+/*header*/
+
+#top {
+    background: #000000;
+    padding: 10px;
+    color: #f3f3f3;
+    font-size: 0.625rem;
+    border-color: transparent;
+    display: flex; /* Usamos Flexbox */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  .titulo {
+    /* Ajustamos el estilo del título */
+    margin-left: 10px; /* Añadimos un margen a la izquierda */
+    font-size: 15px;
+    padding-left: 30px;
+  }
+  
+  #opciones {
+    /* Ajustamos el estilo de las opciones */
+    margin-right: 10px; /* Añadimos un margen a la derecha */
+    padding-right: 20px;
+    
+  }
+  
+  #Lenguaje option {
+    background-color: black; /* Establece el fondo de las opciones como negro */
+    color: white; /* Establece el color del texto como blanco */
+  }
+
+  #Moneda option{
+    background-color: black;
+    color: #fff;
+  }
+  
+#opciones select{
+    background-color: #000000;
+    color: #fff;
+    border-color: transparent;
+}
+
+
+
+/*seecion encabezado*/
+
+#encabezado {
+  background-color: #f0ab3e;
+  display: flex;
+  justify-content: space-between; /* Esto distribuye los elementos horizontalmente */
+  align-items: center; /* Esto alinea verticalmente los elementos */
+  padding: 10px;
+  padding-left: 30px;
+}
+#encabezado span {
+  font: size 1.25rem;
+  font-weight: 700;
+}
+
+
+/* Para el contenedor del logotipo */
+.logo {
+  display: flex;
+  align-items: center; /* Esto alinea verticalmente los elementos */
+}
+
+.marron {
+  color: #3c2313 !important;
+}
+
+.blanco {
+  color: white;
+}
+
+#encabezado ul * {
+  list-style-type: none;
+  color: #fff;
+  font-size: 0.815 rem;
+  text-decoration: none;
+}
+
+/* Para alinear el menú a la derecha */
+#encabezado nav {
+  margin-left: auto;
+}
+
+#encabezado nav ul {
+  display: flex;
+  justify-content: flex-end; /* Esto alinea los elementos a la derecha */
+  align-items: center; /* Esto alinea verticalmente los elementos */
+}
+
+/* Estilo para los elementos de la lista */
+#encabezado nav ul li {
+  margin-left: 20px; /* Espacio entre elementos */
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  text-align: left;
+}
+
+/* seccion banner */
+#banner {
+  display: flex;
+  flex-direction: column; /* Establece la dirección de los elementos como columna */
+  justify-content: center; /* Alinea los elementos verticalmente al centro */
+  align-items: flex-end; /* Alinea los elementos a la derecha */
+  background-size: cover;
+  height: 409px;
+  top: 81px;
+  gap: 0px;
+  background-image: url("../img/banner.png");
+}
+
+#banner-contenido{
+  text-align: center;
+  padding-right: 20px;
+}
+
+#banner .contenedor-titulo {
+  border-radius: 5px;
+  background-color: #fff;
+  height: 3rem;
+  width: auto;
+  margin-left: auto; /* Mueve el contenedor de título a la derecha */
+}
+
+#banner h2 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#banner p {
+  font-family: Roboto;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: center;
+}
+
+#banner button {
+  width: 141px;
+  height: 49px;
+  border-radius: 2px 0px 0px 0px;
+  opacity: 0px;
+  background: rgba(240, 168, 62, 1);
+  border-color: transparent;
+  border-radius: 0.6rem;
+  color: rgba(255, 255, 255, 1);
+  margin-left: auto; /* Mueve el botón a la derecha */
+  margin-top: 10px; /* Añade un espacio entre el párrafo y el botón */
+}
+
+
+/* Seccion productos destacados */
+#productos-destacados .articulos {
+  display: flex; /* Alinea los elementos en una fila */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Alinea los elementos verticalmente */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en una sola fila */
+}
+
+#productos-destacados i {
+  font-size: 4.180rem;
+  color: rgba(240, 168, 62, 1);
+  padding-top: 1rem;
+}
+
+#productos-destacados h1 {
+  font-size: 2.5rem;
+}
+
+#productos-destacados * {
+  text-align: center;
+  padding: 0.20rem;
+}
+
+#productos-destacados p {
+  text-align: center;
+  color: rgba(102, 102, 102, 1);
+}
+
+.naranja {
+  color: #f0ab3e !important;
+}
+
+/* Aplicamos flexbox solo a los artículos */
+#productos-destacados .articulos > article {
+  flex: 1; /* Permite que los elementos ocupen el mismo ancho dentro del contenedor flex */
+  margin: 0 10px; /* Agrega espacio entre los elementos */
+  max-width: 300px; /* Limita el ancho máximo de los elementos */
+}
+
+/* Sección formulario */
+#formulario {
+  display: flex; /* Utilizamos flexbox para centrar el contenido */
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+  flex-direction: column; /* Alineamos los elementos en columna */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#formulario h2 {
+  margin-bottom: 20px; /* Añadimos espacio entre el título y el formulario */
+}
+
+#formulario form {
+  width: 300px; /* Ancho del formulario */
+}
+
+#formulario input,
+#formulario button {
+  margin-bottom: 10px; /* Espacio entre los elementos */
+  width: 100%; /* Ancho completo */
+}
+
+#formulario input{
+  background-color:rgba(60, 35, 19, 1) ;
+  border-radius: 20px;
+  padding-left: 20px;
+  height: 30px;
+  color: #fff;
+}
+
+/* Estilos para el placeholder */
+#formulario input::placeholder {
+  color: rgb(255, 255, 255); /* Cambia el color del placeholder */
+}
+
+#botones{
+  text-align: center;
+}
+
+/* Estilos para los botones */
+#formulario button {
+  width: 100px; /* Ancho de los botones */
+  margin: 0 auto; /* Centramos horizontalmente */
+}
+
+.botonreset,
+.botonenviar {
+  background-color: rgba(138, 135, 135, 1);
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.botonenviar {
+  background-color: rgba(240, 168, 62, 1);
+}
+
+/* Sección suscripcion */
+#suscripcion {
+  display: flex; /* Utilizamos flexbox para alinear los elementos en una fila */
+  justify-content: space-between; /* Alineamos los elementos en los extremos */
+  align-items: center; /* Centramos verticalmente los elementos */
+  background-color: #f0ab3e;
+  padding: 10px; /* Agregamos un poco de espacio alrededor del contenido */
+}
+
+#suscripcion span {
+  color: #fff;
+}
+
+#suscripcion-izq {
+  display: flex; /* Utilizamos flexbox para alinear horizontalmente los elementos */
+  align-items: center;  /* Centramos verticalmente los elementos */
+}
+
+#suscripcion-derecha {
+  display: flex; /* Utilizamos flexbox para alinear horizontalmente los elementos */
+  align-items: center; /* Centramos verticalmente los elementos */
+  margin-left: auto; /* Empuja el contenido hacia la derecha */
+}
+
+#suscripcion-izq img {
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+#email2{
+  background-color: rgb(255, 252, 252);
+  color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  width:172px;
+  border: none;
+  padding: 10px;
+}
+
+#suscripcion button{
+  background-color: rgba(60, 35, 19, 1);
+  color:#f3f3f3 ;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/*seccion contacto*/
+
+
+/* Sección contacto */
+
+#contacto{
+  background-color: #3c2313;
+  color:#fff;
+  padding: 20px;
+}
+
+h6{
+  color:rgba(138, 135, 135, 1);
+}
+
+/* Estilos para los artículos */
+#articulos-contacto article {
+  display: flex; /* Utilizamos flexbox para alinear los elementos en una fila */
+  align-items: center; /* Centramos verticalmente los elementos */
+  padding:12px;
+}
+
+/* Estilos para el contenedor del logo */
+#articulos-contacto article .containerlogo {
+  margin-right: 10px; /* Espacio entre el contenedor del logo y el contenido */
+}
+
+/* Estilos para el contenido del artículo */
+#articulos-contacto article #contenido-articuloscontact {
+  flex: 1; /* El contenido ocupa todo el espacio restante */
+}
+
+
+#contacto .logo {
+  display: flex; /* Utilizamos flexbox para alinear el contenido */
+  justify-content: flex-end; /* Alineamos el contenido a la derecha */
+  align-items: center; /* Centramos verticalmente el contenido */
+  padding-right: 30px;
+}
+
+#contacto .logo img {
+  width: 200px; /* Ancho de la imagen del logo */
+  height: auto; /* Altura automática */
+}
+
+
+/*seccion derecho*/
+#derechos{
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding:10px;
+}
